@@ -1,0 +1,11 @@
+<h1>Rainforest</h1>
+<h2>Product Page</h2>
+<%= link_to "Back", products_path %> |
+
+<%= link_to "Delete", @product, {method: :delete, data: {confirm: "Are you sure you want to delete this product?"}}%>
+
+| <%= link_to "Edit", edit_product_path(@product) %>
+
+<h3><%= @product.name %></h3>
+<p><%= @product.description %></p>
+<p><%= @product.price_in_cents %></p>

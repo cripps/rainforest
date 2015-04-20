@@ -4,5 +4,5 @@
 <% @products.each do |product| %>
   <h3><%= link_to "#{product.name}", "/products/#{product.id}" %></h3>
   <p><%= link_to "#{product.description}", "/products/#{product.id}" %></p>
-  <p><%= product.price_in_cents %></p>
+  <p>$<%= product.formatted_price%></p>
 <% end %>

@@ -1,6 +1,6 @@
 <h1>Rainforest</h1>
 <h2>All Products Page</h2>
-<%= link_to "Create Account", new_user_path%> | <%= link_to "Log In", sessions_new_path %> <br>
+<%= link_to "Create Account", new_user_path%> | <%= link_to "Log In", new_session_path %> <br>
 <%= link_to "Add New Product", new_product_path%>
 <% @products.each do |product| %>
   <h3><%= link_to "#{product.name}", "/products/#{product.id}" %></h3>
